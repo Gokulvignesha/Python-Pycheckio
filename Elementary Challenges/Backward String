@@ -17,6 +17,8 @@ backward_string('123456789') == '987654321'
 Solution :-
 
 
+Method 1:
+
 def backward_string(val: str) -> str:
     # your code here
     return val[::-1]
@@ -32,3 +34,11 @@ if __name__ == '__main__':
     assert backward_string('ohho') == 'ohho'
     assert backward_string('123456789') == '987654321'
     print("Coding complete? Click 'Check' to earn cool rewards!")
+    
+    
+    
+Method 2 : Using Lambda
+
+backward_string = lambda val: val[::-1]      # Lambda repalce the fuction
+
+
